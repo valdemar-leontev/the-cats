@@ -1,0 +1,25 @@
+.app__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 256px;
+    height: 256px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0;
+    
+    margin: 20px;
+
+    transition: 0.4s ease-in-out all;
+
+    &:hover {
+        box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.18);
+        transform: scale(1.1);
+    }
+
+    img {
+        height: 225px;
+        width: 225px;
+    }
+}
