@@ -38,7 +38,7 @@ const CardsContainer = () => {
       const images = await getImagesAsync(page);
       setImages(images);
     })();
-  }, [])
+  }, [getImagesAsync, page])
   
 
   return (
