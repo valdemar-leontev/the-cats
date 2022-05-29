@@ -6,7 +6,7 @@ import './cardsContainer.scss'
 
 const CardsContainer = () => {
 
-  const [page, setPage] = useState<number>(1);
+  const [page] = useState<number>(1);
   const [images, setImages] = useState<CatImageModel[]>([]);
 
   const getImagesAsync = useCallback( async (page: number) => {
