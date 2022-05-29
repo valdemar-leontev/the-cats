@@ -16,10 +16,31 @@
     &:hover {
         box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.18);
         transform: scale(1.1);
+
+        .app__card-heart {
+           display: flex;
+        }
     }
 
     img {
         height: 225px;
         width: 225px;
+
+        object-fit: cover;
+    }
+
+    .app__card-heart {
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+
+        position: absolute;
+        top: 74%;
+        left: 74%;
     }
 }
