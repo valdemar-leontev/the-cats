@@ -11,16 +11,9 @@
     
     margin: 20px;
 
+    position: relative;
+
     transition: 0.4s ease-in-out all;
-
-    &:hover {
-        box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.18);
-        transform: scale(1.1);
-
-        .app__card-heart {
-           display: flex;
-        }
-    }
 
     img {
         height: 225px;
@@ -29,7 +22,7 @@
         object-fit: cover;
     }
 
-    .app__card-heart {
+    .app__card-inactiveHeart {
         display: none;
         align-items: center;
         justify-content: center;
@@ -42,5 +35,30 @@
         position: absolute;
         top: 74%;
         left: 74%;
+    }
+
+    .app__card-activeHeart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+
+        position: absolute;
+        top: 74%;
+        left: 74%;
+    
+    }
+}
+
+.app__card:hover {
+    box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.18);
+    transform: scale(1.1);
+
+    .app__card-inactiveHeart {
+        display: flex;
     }
 }

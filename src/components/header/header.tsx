@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './header.scss'
 
 const Header = () => {
@@ -5,8 +6,8 @@ const Header = () => {
     <>
         <header className='app__header'>
             <ul>
-                <li>Все котики</li>
-                <li>Любимые котики</li>
+                <Link to="/"><li>Все котики</li></Link>
+                <Link to="/favorites"><li>Любимые котики</li></Link>
             </ul>
         </header>
     </>

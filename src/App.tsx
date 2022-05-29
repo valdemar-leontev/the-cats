@@ -1,14 +1,16 @@
-import React from 'react';
-import CardsContainer from './components/cards-container/cardsContainer';
-import Header from './components/header/header';
-
+import Header from "./components/header/header";
+import { AppDataContextProvider } from "./contexts/app-data-context";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import { AppRoutes } from "./app-routes";
 
 function App() {
   return (
-   <>
-    <Header />
-    <CardsContainer/>
-   </>
+    <AppDataContextProvider>
+      <HashRouter>
+        <Header />
+        <AppRoutes />
+      </HashRouter>
+    </AppDataContextProvider>
   );
 }
 
