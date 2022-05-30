@@ -5,7 +5,7 @@ import { useAppData } from "./contexts/app-data-context";
 
 export const AppRoutes = () => {
 
-  const {getImagesAsync} = useAppData();
+  // const {getImagesAsync} = useAppData();
 
   return (
     <Routes>

@@ -17,7 +17,7 @@ const ImageCard = ({image} : ImageCardProps) => {
 
   const onHeartClick = useCallback(async () => {
     
-    const response = await saveImageAsFavoriteAsync(id);
+    await saveImageAsFavoriteAsync(id);
     setActive(prev => !prev);
   }, [id, saveImageAsFavoriteAsync]);
 
