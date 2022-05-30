@@ -1,0 +1,9 @@
+{
+    "rules": {
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "object-curly-spacing": ["error", "always"],
+    "semi": ["error", "always"],
+    "react/react-in-jsx-scope": "off",
+    "react/display-name": "off"
+  }
+}

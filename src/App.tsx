@@ -1,15 +1,15 @@
-import Header from "./components/header/header";
-import { AppDataContextProvider } from "./contexts/app-data-context";
-import { HashRouter } from "react-router-dom";
-import { AppRoutes } from "./app-routes";
+import Header from './components/header/header';
+import { AppDataContextProvider } from './contexts/app-data-context';
+import { BrowserRouter } from 'react-router-dom';
+import { AppRoutes } from './app-routes';
 
 function App() {
   return (
     <AppDataContextProvider>
-      <HashRouter>
+      <BrowserRouter>
         <Header />
         <AppRoutes />
-      </HashRouter>
+      </BrowserRouter>
     </AppDataContextProvider>
   );
 }

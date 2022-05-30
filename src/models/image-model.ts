@@ -1,4 +1,4 @@
-export type CatImageModel = {
+export type ImageModel = {
     id: string;
     url: string;
 }
