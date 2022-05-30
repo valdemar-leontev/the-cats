@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Pager from '../pager/pager';
 import './header.scss';
 
 const Header = () => {
@@ -9,6 +10,8 @@ const Header = () => {
                 <Link to='/'><li>Все котики</li></Link>
                 <Link to='/favorites'><li>Любимые котики</li></Link>
             </ul>
+
+            <Pager />
         </header>
     </>
   );

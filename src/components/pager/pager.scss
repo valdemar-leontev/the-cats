@@ -1,0 +1,29 @@
+.header__pager {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 200px;
+    height: 100%;
+
+    gap: 20px;
+    margin-right: 60px;
+
+    .header__pager-directionButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 70px;
+        height: 50%;
+        border-radius: 20px;
+
+        background-color: rgb(255, 255, 255);
+
+        cursor: pointer;
+    }
+
+    span {
+        color: white;
+    }
+}
