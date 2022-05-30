@@ -1,7 +1,7 @@
 
 import { Route, Routes } from "react-router";
 import Gallery from "./components/gallery/gallery";
-import { useAppData } from "./contexts/app-data-context";
+// import { useAppData } from "./contexts/app-data-context";
 
 export const AppRoutes = () => {
 
